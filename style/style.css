@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap");
 /*
   1. Use a more-intuitive box-sizing model.
 */
@@ -66,4 +67,53 @@ h6 {
 #root,
 #__next {
   isolation: isolate;
+}
+body {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  background: rgb(187, 175, 207);
+  background: linear-gradient(
+    180deg,
+    rgba(187, 175, 207, 1) 0%,
+    rgba(165, 164, 226, 1) 100%
+  );
+  font-family: "Poppins", sans-serif;
+}
+
+.drop-down {
+  min-width: 400px;
+  display: grid;
+  gap: 10px;
+}
+.drop-down__menu {
+  background-color: white;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  border-radius: 10px;
+}
+.drop-down__menu > p {
+  grid-column: 2/3;
+  justify-self: center;
+}
+.drop-down__menu > img {
+  grid-column: 3/4;
+  justify-self: end;
+}
+.drop-down__submenu {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.drop-down__submenu > p {
+  padding: 10px;
+  width: 100%;
+  text-align: center;
+}
+:is(.drop-down__submenu > p:hover, .drop-down__submenu > p:focus) {
+  background-color: #f2f2f2;
 }
