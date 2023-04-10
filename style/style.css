@@ -85,7 +85,7 @@ body {
 }
 
 .drop-down {
-  max-width: 400px;
+  min-width: 400px;
   display: grid;
   gap: 10px;
 }
