@@ -114,12 +114,15 @@ body {
   overflow: hidden;
   display: flex;
 }
-.drop-down__submenu > p {
+
+.drop-down__submenu > a {
+  text-decoration: none;
+  color: black;
   padding: 10px;
   width: 100%;
   text-align: center;
 }
-:is(.drop-down__submenu > p:hover, .drop-down__submenu > p:focus) {
+:is(.drop-down__submenu > a:hover, .drop-down__submenu > p:focus) {
   background-color: #f2f2f2;
 }
 .hide-menu {
