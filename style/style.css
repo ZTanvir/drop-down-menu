@@ -96,6 +96,7 @@ body {
 .drop-down__menu > p {
   grid-column: 2/3;
   justify-self: center;
+  opacity: 0.5;
 }
 .drop-down__menu > img {
   grid-column: 3/4;
@@ -108,6 +109,7 @@ body {
   align-items: center;
   border-radius: 10px;
   overflow: hidden;
+  display: flex;
 }
 .drop-down__submenu > p {
   padding: 10px;
@@ -116,4 +118,7 @@ body {
 }
 :is(.drop-down__submenu > p:hover, .drop-down__submenu > p:focus) {
   background-color: #f2f2f2;
+}
+.hide-menu {
+  visibility: hidden;
 }
