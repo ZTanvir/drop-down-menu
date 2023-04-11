@@ -68,6 +68,10 @@ h6 {
 #__next {
   isolation: isolate;
 }
+a {
+  text-decoration: none;
+}
+
 body {
   min-height: 100vh;
   display: grid;
@@ -116,7 +120,6 @@ body {
 }
 
 .drop-down__submenu > a {
-  text-decoration: none;
   color: black;
   padding: 10px;
   width: 100%;
@@ -127,4 +130,26 @@ body {
 }
 .hide-menu {
   visibility: hidden;
+}
+/* mobile drop down menu */
+.mobile-drop-down {
+  background-color: white;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  justify-items: center;
+}
+.more {
+  display: flex;
+  flex-direction: column;
+}
+.mobile-drop-down__menu-text {
+  text-align: center;
+}
+.mobile-drop-down__sub-menu {
+  display: flex;
+  flex-direction: column;
+}
+.hide-sub-menu {
+  display: none;
 }
