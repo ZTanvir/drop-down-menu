@@ -10,9 +10,9 @@ function dropDown(clickElement,addClassElement,cssClass){
         addClassElement.classList.toggle(cssClass);
         let imageSrc = dropDownImg.src;
         if(imageSrc.includes("expandmore")){
-            dropDownImg.src = "/drop-down-menu/images/expandless.svg";
+            dropDownImg.src = "./images/expandless.svg";
         }else{
-            dropDownImg.src = "/drop-down-menu/images/expandmore.svg";
+            dropDownImg.src = "./images/expandmore.svg";
         }
     })
 }
@@ -24,9 +24,9 @@ dropSubMenuOptions.forEach(item=>{
         dropDownSubMenu.classList.toggle("hide-menu");
         let imageSrc = dropDownImg.src;
         if(imageSrc.includes("expandmore")){
-            dropDownImg.src = "/drop-down-menu/images/expandless.svg";
+            dropDownImg.src = "./images/expandless.svg";
         }else{
-            dropDownImg.src = "/drop-down-menu/images/expandmore.svg";
+            dropDownImg.src = "./images/expandmore.svg";
         }
     })
 })
