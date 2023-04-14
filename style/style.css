@@ -136,10 +136,14 @@ body {
   display: grid;
   grid-template-rows: 1fr;
 }
+.mobile-drop-down__menu {
+  cursor: pointer;
+}
+
 .mobile-drop-down__options {
   min-width: 550px;
   background-color: white;
-  padding: 10px;
+  padding: 5px;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   justify-items: center;
@@ -156,7 +160,6 @@ body {
 .mobile-drop-down__sub-menu {
   display: flex;
   flex-direction: column;
-
   /* .mobile-drop-down */
   grid-area: 2/2/3/3;
 }
@@ -171,7 +174,7 @@ body {
 }
 
 .hide-sub-menu {
-  /* display: none; */
+  visibility: hidden;
 }
 .active {
   border-bottom: 2px solid black;

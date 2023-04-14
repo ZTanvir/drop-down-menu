@@ -30,3 +30,11 @@ dropSubMenuOptions.forEach(item=>{
         }
     })
 })
+// mobile drop down
+const mobileDropdown = document.querySelector(".mobile-drop-down__menu");
+mobileDropdown.addEventListener("click",(e)=>{
+    e.preventDefault();
+    const mobileSubDropdown = document.querySelector(".mobile-drop-down__sub-menu");
+    mobileSubDropdown.classList.toggle("hide-sub-menu");
+
+})
