@@ -179,3 +179,13 @@ body {
 .active {
   border-bottom: 2px solid black;
 }
+@media only screen and (max-width: 599px) {
+  .drop-down {
+    display: none;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .mobile-drop-down {
+    display: none;
+  }
+}

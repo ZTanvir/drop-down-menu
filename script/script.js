@@ -36,5 +36,20 @@ mobileDropdown.addEventListener("click",(e)=>{
     e.preventDefault();
     const mobileSubDropdown = document.querySelector(".mobile-drop-down__sub-menu");
     mobileSubDropdown.classList.toggle("hide-sub-menu");
-
 })
+// Add border under a link
+const mobileDropDownLink = document.querySelectorAll(".mobile-drop-down__options > a");
+mobileDropDownLink.forEach(link =>{
+    link.addEventListener("click",(e)=>{
+        removeActiveClass(mobileDropDownLink);
+        e.target.classList.add("active");
+    })
+})
+// remove active class
+function removeActiveClass(htmlDom){
+    htmlDom.forEach(link =>{
+        if(link.classList.contains("active")){
+            link.classList.remove("active");
+        }
+    })
+}
