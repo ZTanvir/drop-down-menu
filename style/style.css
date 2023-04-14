@@ -167,6 +167,13 @@ body {
   color: black;
   opacity: 0.8;
 }
+:is(
+    .mobile-drop-down__options > a:hover,
+    .mobile-drop-down__menu:hover,
+    .mobile-drop-down__sub-menu > a:hover
+  ) {
+  background-color: lightgray;
+}
 .mobile-drop-down__sub-menu > a {
   margin-top: 1px;
   padding: 10px;
